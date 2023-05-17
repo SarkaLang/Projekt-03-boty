@@ -22,13 +22,179 @@ body {
 
 /* ----- zde zacni psat vlastni css ----- */
 
+/*Body - základ*/
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
+    background-color:  #f5f5f5;
 }
-
 
 h1 {
     font-weight: 500;
 }
+
+/*Sekce zboží - hlavní sekce*/
+.zbozi {
+    background-color:#f5f5f5;
+    width: 670px;
+    height: 440px;
+    display: flex;
+    margin: auto;
+    position: relative;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+}
+
+/*Leva sekce - logo - slogan - bota - cenovka*/
+
+.vizual {
+ background: linear-gradient(#06d7c1,#50cc49 );
+ position: relative;
+ padding: 30px;
+ width: 335px;
+ border-radius: 10px 0 0 10px;
+ font-family: 'Rubik', sans-serif;
+}
+
+
+.logo {
+    display: flex;
+}
+
+.slogan {
+ color: white;
+ font-size: 16px;
+ font-weight: 500;
+ margin-top: 30px;
+}
+
+.bota {
+    position: relative;
+    left: -40%;
+}
+
+.cenovka {
+    display: flex;
+    position: relative;
+    top: -105px;
+    left: 30px;
+    padding: 30px;
+    justify-content: end;
+    flex-direction: column;
+    text-align: right;
+    color: white;
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500; 
+}
+
+.zaruka {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*2 sekce - základy*/
+
+.detaily {
+ padding: 30px;
+ width: 335px;
+ border-radius: 10px 0 0 10px;
+ background-color: white;
+ border-radius: 0 10px 10px 0;
+ font-family: 'Rubik', sans-serif;
+}
+
+/*Podsekce detaily*/
+
+.nazev {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+   
+}
+
+.produkt {
+ color: rgb(149, 142, 142);
+ font-size: 14px;
+ font-weight: 400;
+}
+
+.popis {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family:'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+.parametr {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.velikosti {
+    display: flex; 
+    justify-content: space-between;
+    padding: 5px 30px 40px 10px;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    align-items: center;
+    size: 14px;
+}
+
+.velikosti {
+    display: flex;
+    align-items: baseline;
+}
+
+.vybrana {
+    width: 30px;
+    line-height: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f15f42;
+    border-radius: 50px;
+    text-align: center;
+    color:#f15f42 ;
+}
+
+/*Tlacitko*/
+
+.akce {
+    position: relative;
+    height: 80px;
+    margin: 10px 0 0 0;
+}
+
+a.tlacitko {
+    width: 125px;
+    height: 40px;
+    position: absolute;
+    margin: 30px 0 20px 0;
+    background-color:#f15f42;
+    border-radius: 5px;
+    text-align: center;
+    padding: 13px;
+    text-transform: uppercase; 
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;;
+}
+
 
